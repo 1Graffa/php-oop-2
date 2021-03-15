@@ -8,6 +8,7 @@ id				numero - INT – PK – (AI – UNIQUE)
 nome				stringa – varchar(50) - NOT NULL
 cognome				stringa – varchar(50) - NOT NULL
 nickname			stringa – varchar(15) - NOT NULL
+status				stringa – varchar(15) - NOT NULL
 e-mail				stringa – varchar(319) - NOT NULL
 username			stringa – varchar(50) - NOT NULL
 password			stringa – varchar(20) - NOT NULL

@@ -42,3 +42,19 @@ $terzo->$status = 'beginner';
 $terzo->$mail = 'av@gmail.com';
 $terzo->$password = '123bella';
 $terzo->$data_dinascita = '08/09/1995';
+
+// stampo a schermo
+echo $primo->nickname;
+echo $primo->mail;
+echo $primo->data_dinascita;
+echo $primo->status;
+
+echo $secondo->nickname;
+echo $secondo->mail;
+echo $secondo->data_dinascita;
+echo $secondo->status;
+
+echo $secondo->nickname;
+echo $secondo->mail;
+echo $secondo->data_dinascita;
+echo $secondo->status;

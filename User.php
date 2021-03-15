@@ -7,23 +7,23 @@ class User{
     public $status;
     
 // dichiaro costruttore
-    public function __construct($_nickname = ' ', $_password =' '){
+    public function __construct($_nickname = ' ', $_status =' '){
         $this->nickname = $_nickname;
-        $this->password = $_password;
+        $this->status = $_status;
         
     }
 
 }
 // istanzio l'oggetto con un nickname e una password
 $hackerman = new User();
-$password = new User();
+$pallone12 = new User();
 // accedo all'oggetto instanziato
 $hackerman->nickname = 'Nuovo user';
-$password->password = 'Pasword segreta';
+$newUser->status = 'Advanced';
 
 // stampo a schermo
 echo $hackerman->nickname;
-echo $password->password;
+echo $newUser->status;
 
 
 

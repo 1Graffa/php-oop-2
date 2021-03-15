@@ -7,23 +7,29 @@ class User{
     public $status;
     
 // dichiaro costruttore
-    public function __construct($_nickname = ' ', $_status =' '){
+    public function __construct($_nickname = ' '){
         $this->nickname = $_nickname;
         $this->status = $_status;
         
     }
 
 }
-// istanzio l'oggetto con un nickname e una password
+// istanzio 3 nuovi user con un nickname
 $hackerman = new User();
-$pallone12 = new User();
-// accedo all'oggetto instanziato
-$hackerman->nickname = 'Nuovo user';
-$newUser->status = 'Advanced';
+$pokerboy = new User();
+$funnyguy = new User();
+
+// accedo agli oggetti istanziati
+$hackerman->nickname = 'hackerman99 ';
+$pokerboy->nickname = 'pokerboy79 ';
+$funnyguy->nickname = 'funnyguy88 ';
+
 
 // stampo a schermo
 echo $hackerman->nickname;
-echo $newUser->status;
+echo $pokerboy->nickname;
+echo $funnyguy->nickname;
+
 
 
 

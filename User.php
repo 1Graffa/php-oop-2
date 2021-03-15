@@ -1,5 +1,4 @@
 <?php
-require_once 'GetStatus.php';
 //creo classe
 class User{
     public $id;
@@ -10,15 +9,17 @@ class User{
     public $mail;
     public $password;
     public $data_di_nascita;
+    // public $data_di_iscrizione;
 
-    use GetStatus;
-    
 // dichiaro costruttore
     public function __construct($_id, $_nickname, $_mail){
         $this->id = $_id;
         $this->nickname = $_nickname;
         $this->mail = $_mail;
     }
+    // public function iscrtittoDa($data_di_iscrizione){
+    //     return date('Y') - $data_di_iscrizione;
+    // }
 }
 // istanzio 3 nuovi user
 $user1 = new User(001,'hackerman','mr@gmail.com');
@@ -27,6 +28,7 @@ $user1->cognome = 'rossi';
 $user1->status = 'advanced';
 $user1->password = '123stella';
 $user1->data_di_nascita = '30/10/1988';
+$user1->data_di_iscrizione = 2010;
 
 $user2 = new User(002,'pokerboy','pb@gmail.com');
 $user2->nome = 'paolo';
@@ -34,6 +36,7 @@ $user2->cognome = 'bianchi';
 $user2->status = 'intermediate';
 $user2->password = '123palla';
 $user2->data_di_nascita = '21/07/1993';
+$user1->data_di_iscrizione = 2015;
 
 $user3 = new User(003,'funnyguy','av@gmail.com');
 $user3->nome = 'antonio';
@@ -41,6 +44,7 @@ $user3->cognome = 'verdi';
 $user3->status = 'beginner';
 $user3->password = '123bella';
 $user3->data_di_nascita = '08/09/1995';
+$user1->data_di_iscrizione = 2020;
 
 // stampo a schermo
 echo $user1->nickname;

@@ -1,62 +1,44 @@
 <?php
-
+//creo classe
 class User{
+    public $id;
+    public $nome;
+    public $cognome;
     public $nickname;
-    public $password;
-    public $eta;
     public $status;
-    public $bonus = 0;
+    public $mail;
+    public $password;
+    public $data_di_nascita;
     
 // dichiaro costruttore
-    public function __construct($_nickname, $_password){
-        $this->nickname = $_nickname;
-    }
-    public function setBonus($status){
-        if($status == 'advanced'){
-            $this->bonus = 100;
-        }
-        elseif($status == 'intermediate'){
-            $this->bonus = 50;
-        }
-        else {
-            $this->bonus = 20;
-        }
-    }
-    public function getBonus(){
-        return $this->bonus;
+    public function __construct($_id){
+        $this->nickname = $_id;
     }
 }
-// istanzio 3 nuovi user con un nickname (e uno status)
-$hackerman = new User('hackerman', '123stella');
-$hackerman->nickname = 'hackerman99 ';
-$hackerman->password = '123stella ';
-$hackerman->eta = 30;
-$hackerman->status = 'advanced';
+// istanzio 3 nuovi user
+$primo = new User(001);
+$primo->$nome = 'mario';
+$primo->$cognome = 'rossi';
+$primo->$nickname = 'hackerman';
+$primo->$status = 'advanced';
+$primo->$mail = 'mr@gmail.com';
+$primo->$password = '123stella';
+$primo->$data_dinascita = '30/10/1988';
 
-$pokerboy = new User('pokerboy', '123palla ');
-$pokerboy->nickname = 'pokerboy79 ';
-$pokerboy->password = '123palla ';
-$pokerboy->eta = 25;
-$pokerboy->status = 'intermediate';
+$secondo = new User(002);
+$secondo->$nome = 'paolo';
+$secondo->$cognome = 'bianchi';
+$secondo->$nickname = 'pokerboy';
+$secondo->$status = 'intermediate';
+$secondo->$mail = 'pb@gmail.com';
+$secondo->$password = '123palla';
+$secondo->$data_dinascita = '21/07/1993';
 
-$funnyguy = new User('funnyguy', '123opla ');
-$funnyguy->nickname = 'funnyguy88 ';
-$funnyguy->password = '123opla ';
-$funnyguy->eta = 19;
-$funnyguy->status = 'beginner';
-
-// stampo a schermo
-echo $hackerman->nickname;
-echo $hackerman->password;
-echo $hackerman->eta;
-echo $hackerman->status;
-
-echo $pokerboy->nickname;
-echo $pokerboy->password;
-echo $pokerboy->eta;
-echo $pokerboy->status;
-
-echo $funnyguy->nickname;
-echo $funnyguy->password;
-echo $funnyguy->eta;
-echo $funnyguy->status;
+$terzo = new User(003);
+$terzo->$nome = 'antonio';
+$terzo->$cognome = 'verdi';
+$terzo->$nickname = 'funnyguy';
+$terzo->$status = 'beginner';
+$terzo->$mail = 'av@gmail.com';
+$terzo->$password = '123bella';
+$terzo->$data_dinascita = '08/09/1995';
